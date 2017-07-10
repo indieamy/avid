@@ -84,7 +84,22 @@ header {
 .overlay-desc h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 10rem;
-  text-align: center;
+  font-size: 6rem;
+  text-align: left;
+	line-height: 7.5rem;
 }
 
+#empower {
+	color: #f1c40f;
+}
+
+#with-avid {
+	color: #f1c40f;
+}
+
+/* Data Rotator */
+
+.gallery {
+  position: relative;
+  height: 150rem;
+}
