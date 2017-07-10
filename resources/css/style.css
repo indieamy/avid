@@ -1,0 +1,55 @@
+/*Universal Styling*/
+
+body {
+	font-size: 18px;
+	font-family: 'Open Sans';
+}
+
+/*Header Content*/
+
+header {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 1px solid #ecf0f1;
+	width: 100%;
+}
+
+.header {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 4rem;
+	margin: 1rem 1rem 1rem 0.5rem;
+}
+
+.main-nav ul {
+	display: inline-block;
+}
+
+/* Video Full Screen */
+.container .video {
+	width: 100%;
+}
+
+.video {
+	position:relative;
+	width: 100%;
+	padding-bottom:56.25%;
+}
+
+iframe {
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-size:cover;
+}
