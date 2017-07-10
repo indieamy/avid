@@ -7,6 +7,7 @@
 <link href="resources/css/style.css" rel="stylesheet" type="text/css">
 <link href="resources/css/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="https://use.fontawesome.com/4ff4d94746.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,700,800,800i|Open+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
 </head>
 
 
@@ -14,13 +15,12 @@
 <body>
 
 <header>
-   <div class="header">
      <div class="logo">
        <img src="resources/images/avid-logo-big.png">
      </div>
    
-   <nav class="desktop">
-	<ul class="main-nav">
+   <nav class="desktop main-nav">
+	<ul>
     	<li class="top-level-link">
         	<a href="#"><span>MyAVID Login</span></a>
         </li>
@@ -40,17 +40,22 @@
    <nav class="mobile">
    </nav>
    
-   
-   
-   </div>  
+    
  </header>
  
  
- <div class="full-page-video">
- 	<div class="video">
-    	<iframe src="https://www.youtube.com/embed/yHTyeRAENJI?ecver=2?rel=0&autoplay=1" frameborder="0" style="allowfullscreen"></iframe>
-        </div>
- 
+<div class="video-container">
+    	<video autoplay id="video-background">
+       		<source src="resources/video/AVID_org_v1.02.mp4" type="video/mp4">
+       	</video>
+       	<div class="overlay-desc">
+       	<h1>When they achieve,<br />
+			we succeed.</h1>
+		</div>
+</div>
+
+<div class="container">		
+</div>
  
  
  
