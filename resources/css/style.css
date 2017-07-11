@@ -218,20 +218,29 @@ header {
 	color: #ecf0f1;
 }
 
-/* Tabbed Apps */
 
-/*#tabs {
+
+
+/*Tabbed Content*/
+
+.container-tabs {
 	display: flex;
 	justify-content: center;
-	border: 5px solid black;
 	background-color: #ecf0f1;
-	height: 100%;
+	height: 1000px;
+	padding: 0 3rem;
 }
 
 .title {
 	display: flex;
 	align-items: center;
 	flex-grow: 1;
+	margin-top: 9rem;
+}
+
+.title h3 {
+	font-size: 2.5rem;
+	color: #2980b9;
 }
      
       .tabs input[type=radio] {
@@ -304,7 +313,14 @@ header {
         animation-duration: 0.5s;
       }
 
-/*.tab-content img {
+.tab-content img {
 	width: 100%;
 	height: 100%;
+}
+
+#tab-content1 {
+	background-image: url(../images/SI.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
 }
