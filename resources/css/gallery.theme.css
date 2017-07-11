@@ -14,11 +14,17 @@
 .gallery {
   display: flex;
   position: relative;
-  height: 20rem;
+  height: 30rem;
+  padding-bottom: 25%;
 }
+
+.gallery #first-item {
+	padding-bottom: 25%;
+}
+
 .gallery .item { 
   align-items: center;
-  padding: 5rem 0;
+  padding: 4rem 0 2.5rem 0;
   height: 10rem;
   overflow: hidden;
   text-align: center;
@@ -26,10 +32,16 @@
 }
 .gallery .controls {
   position: absolute;
- bottom: 0;
+  bottom: 0;
   width: 100%;
   text-align: center;
 }
+
+.controls {
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+}
+
 .gallery .control-button {
   display: inline-block;
   margin: 0 .02em;

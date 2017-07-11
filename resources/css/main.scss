@@ -1,0 +1,359 @@
+/* Scss Document */
+
+/* Events Tabbs Apps CSS */
+
+@import "compass/css3";
+
+// VARIABLES
+//---------------------------------------------------------
+$c-slate: #3d5265;
+
+// BOX MODEL
+//---------------------------------------------------------
+*, *:after, *:before { box-sizing: border-box; }
+body {
+  font-family: Gotham, Raleway, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  background-color: $c-slate;
+}
+
+// CLEARFIX
+//--------------------------------------------------------------------------
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+
+// MEDIA QUERY BREAKPOINTS
+//---------------------------------------------------------
+@mixin breakpoint($point, $minmax: min) {
+	@if $minmax == min {
+		$minmax: min-width;
+	} @else if $minmax == max {
+		$minmax: max-width;
+	}
+
+	@if $point == desktop {
+		@media screen and ($minmax: 1024px) { @content; }
+	}
+	@else if $point == tablet {
+		@media screen and ($minmax: 768px) { @content; }
+	}
+	@else if $point == mobile {
+		@media screen and (max-width: 767px) { @content; }
+	} @else {
+		@media screen and ($minmax: $point) { @content; }
+	}
+}
+
+// FLEX UTILITIES
+//---------------------------------------------------------
+%flexbox {
+  // Flexbox Layout
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin order($num) {
+  -webkit-box-ordinal-group: $num;
+  -moz-box-ordinal-group: $num;
+  -ms-flex-order: $num;
+  -webkit-order: $num;
+  order: $num;
+}
+
+// BASE FLEX STYLES
+//---------------------------------------------------------
+.flex-container {
+  @extend %flexbox;
+  
+  // Flow in columns
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  
+  @include breakpoint(tablet){
+    // Change Flexbox Flow
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+
+.flex-object {
+  @extend %flexbox;
+  min-width: 25vw;
+  
+  @include breakpoint(mobile){
+    min-height: 100vw;
+  }
+  
+  @include breakpoint(tablet){
+    -webkit-flex: 1 50%;
+    flex: 1 50%;
+    min-height: 50vw;
+  }
+  
+  @include breakpoint(desktop){
+    -webkit-flex: 1 25%;
+    flex: 1 25%;
+    min-height: 25vw;
+  }
+  
+  &.flex-object--fullwidth {
+    -webkit-flex: 1 100%; 
+    flex: 1 100%;
+  }
+}
+
+// FLEX LABLES
+// For the smaller boxes that serve as the toggles
+//---------------------------------------------------------
+.flex-label {
+  // Flexbox
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+  -webkit-align-self: center;
+  align-self: center;
+  
+  // Other styles
+  text-align: center;
+  
+  h3 {
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px;
+    font-size: 1.25em;
+    line-height: 1.35;
+    transition: all 0.3s ease;
+    
+    &.has-mouseover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+.flex-content {
+  -webkit-flex: 1 100%; 
+  flex: 1 100%;
+  
+  background-color: $c-slate;
+  color: white;
+  padding: 60px 40px;
+}
+
+// MOVING INDIVIDUAL FLEX OBJECTS
+//---------------------------------------------------------
+.flex-object--one {
+  @include breakpoint(tablet){
+    @include order(1);
+  }
+  @include breakpoint(desktop){
+    @include order(1);
+  }
+}
+.flex-object--one__info {
+  @include breakpoint(tablet){
+    @include order(3);
+  }
+  @include breakpoint(desktop){
+    @include order(5);
+  }
+}
+
+.flex-object--two {
+  @include breakpoint(tablet){
+    @include order(2);
+  }
+  @include breakpoint(desktop){
+    @include order(2);
+  }
+}
+.flex-object--two__info {
+  @include breakpoint(tablet){
+    @include order(4);
+  }
+  @include breakpoint(desktop){
+    @include order(6);
+  }
+}
+
+.flex-object--three {
+  @include breakpoint(tablet){
+    @include order(5);
+  }
+  @include breakpoint(desktop){
+    @include order(3);
+  }
+}
+.flex-object--three__info {
+  @include breakpoint(tablet){
+    @include order(7);
+  }
+  @include breakpoint(desktop){
+    @include order(7);
+  }
+}
+
+.flex-object--four {
+  @include breakpoint(tablet){
+    @include order(6);
+  }
+  @include breakpoint(desktop){
+    @include order(4);
+  }
+}
+.flex-object--four__info {
+  @include breakpoint(tablet){
+    @include order(8);
+  }
+  @include breakpoint(desktop){
+    @include order(8);
+  }
+}  
+.is-hidden:not(.is-visible) {
+  display: none;
+}
+
+:not(.no-smil) {
+
+}
+
+// DEMO STYLES
+//---------------------------------------------------------
+.flex-object--one,
+.flex-object--two,
+.flex-object--three,
+.flex-object--four {
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  
+  &.is-active:after {
+    content: '';
+    border: 36px solid $c-slate;
+    position: absolute;
+    bottom: -36px;
+    left: calc(50% - 36px);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.flex-object--one {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4794/seattle.jpg');
+}
+.flex-object--two {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4794/sf.jpg');
+}
+.flex-object--three {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4794/chicago.jpg');
+}
+.flex-object--four {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4794/nyc.jpg');
+}
+
+/* Because IE doen't gracefully support Flexbox in IE10, we employ this hack which turns the entire layout into a float layout. */
+.no-smil {
+  
+  .flex-container {
+    display: block;
+  }
+  
+  .flex-object {
+    @extend .clearfix;
+    display: block;
+    width: 100vw;
+    min-height: 0;
+    
+    &:nth-of-type(odd) {
+      float: left;
+    }
+    
+    &:nth-of-type(even) {
+      width: auto;
+    }
+  }
+  
+  .flex-object.flex-object--one,
+  .flex-object.flex-object--two,
+  .flex-object.flex-object--three,
+  .flex-object.flex-object--four {
+    position: relative;
+    cursor: auto;
+    min-height: 100vw;
+    
+    @include breakpoint(tablet) {
+      min-height: 600px;
+      background-position: center;
+      width: 33vw;
+      margin-right: 60px;
+    }
+    
+    &:after {
+      content: '';
+      border: 36px solid $c-slate;
+      position: absolute;
+      bottom: -36px;
+      left: 50px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  
+  .flex-object.flex-object--one:after {
+    left: calc(20% - 36px);
+    
+    @include breakpoint(tablet) {
+      left: auto;
+      bottom: auto;
+      right: -36px;
+      top: 20%;
+    }
+  }
+  .flex-object.flex-object--two:after {
+    left: calc(40% - 36px);
+    
+    @include breakpoint(tablet) {
+      left: auto;
+      bottom: auto;
+      right: -36px;
+      top: 20%;
+    }
+  }
+  .flex-object.flex-object--three:after {
+    left: calc(60% - 36px);
+    
+    @include breakpoint(tablet) {
+      left: auto;
+      bottom: auto;
+      right: -36px;
+      top: 20%;
+    }
+  }
+  .flex-object.flex-object--four:after {
+    left: calc(80% - 36px);
+    
+    @include breakpoint(tablet) {
+      left: auto;
+      bottom: auto;
+      right: -36px;
+      top: 20%;
+    }
+  }
+  
+  .flex-label {
+    position: absolute;
+    top: calc(50% - 37px);
+    left: 0;
+    right: 0;
+  }
+}
