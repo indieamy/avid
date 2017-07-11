@@ -31,7 +31,7 @@ header {
 }
 
 .logo img {
-	height: 6rem;
+	height: 4rem;
 	margin: 1rem 1rem 1rem 0.5rem;
 }
 
@@ -47,14 +47,31 @@ header {
 .main-nav ul li {
 	align-content: center;
 	align-items: flex-end;
-	font-size: 1.6rem;
-	padding: 0 2rem;
+	font-size: 1rem;
+	padding: 0 1.2rem;
+	font-weight: 500;
 }
 
 .main-nav ul li a {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.main-nav ul li a:hover {
+	color: #f1c40f;
+}
+
+#myavid-login {
+	color: #f1c40f;
+	border: 2px solid #f1c40f;
+	padding: 0.5rem;
+	border-radius: 0.3rem;
+}
+
+#myavid-login:hover {
+	border: 2px solid #ecf0f1;
+	color: #ecf0f1;
 }
 
 /* Video Full Screen */
@@ -84,9 +101,10 @@ header {
 .overlay-desc h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   text-align: left;
 	line-height: 7.5rem;
+	font-weight: 500;
 }
 
 #empower {
@@ -97,13 +115,76 @@ header {
 	color: #f1c40f;
 }
 
+@media only screen and (max-width: 768px) {
+	.overlay-desc h1 {
+		font-size: 5rem;
+	}
+}
+
 /*Main messaging content */
 
+.container {
+	background-color: #ecf0f1;
+}
+
+.container .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 7rem 2.5rem;
+	line-height: 3.7rem;
+}
+
+.content h2 {
+	color: #16a085;
+	align-items: center;
+	text-align: center;
+	font-size: 3rem;
+	width: 90%;
+}
 
 
 /* Data Rotator */
 
-.gallery {
-  position: relative;
-  height: 150rem;
+.item h4 {
+	color: #ecf0f1;
+	font-size: 4rem;
+	font-weight: 600;
+	margin: 1.5rem 0;
+}
+
+.item p {
+	color: #ecf0f1;
+	font-size: 2rem;
+}
+#first-item {
+	background-color: #e74c3c;
+}
+
+#second-item {
+	background-color: #16a085;
+}
+
+#third-item {
+	background-color: #9b59b6;
+}
+
+#fourth-item {
+	background-color: #2980b9;
+}
+
+.fa-bullseye {
+	color: #ecf0f1;
+}
+
+.fa-graduation-cap {
+	color: #ecf0f1;
+}
+
+.fa-check-square {
+	color: #ecf0f1;
+}
+
+.fa-bank {
+	color: #ecf0f1;
 }

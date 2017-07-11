@@ -5,7 +5,6 @@
 <title>AVID.org</title>
 <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
 <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-<link href="resources/css/bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="resources/css/gallery.theme.css">
 <link rel="stylesheet" href="resources/css/gallery.min.css">
 <script src="https://use.fontawesome.com/4ff4d94746.js"></script>
@@ -24,13 +23,13 @@
    <nav class="desktop main-nav">
 	<ul>
     	<li class="top-level-link">
-        	<a href="#"><span>MyAVID Login</span></a>
+        	<a href="#"><span id="myavid-login">MyAVID Login</span></a>
         </li>
         <li class="top-level-link">
         	<a href="#"><span>My Profile</span></a>
         </li>
         <li class="top-level-link">
-        	<a href="#"><span><i class="fa fa-2x fa-search" aria-hidden="true"></i></span></a>
+        	<a href="#"><span><i class="fa fa-lg fa-search" aria-hidden="true"></i></span></a>
         </li>
         <li class="top-level-link">
         	<a href="#"><span><i class="fa fa-2x fa-bars" aria-hidden="true"></i></span></a>
@@ -61,7 +60,9 @@
 
 <!-- Main Messaging -->
 <div class="container">
-
+	<div class="content">
+	<h2>AVID transforms schools and districts so that all students will be successful in college, career, and life.</h2>
+	</div>
 </div>
 
 <!-- Data Rotator -->
@@ -72,20 +73,28 @@
   <div id="item-3" class="control-operator"></div>
   <div id="item-4" class="control-operator"></div>
 
-  <figure class="item">
-    <h1>1</h1>
+  <figure class="item" id="first-item">
+	  <i class="fa fa-5x  fa-bullseye" aria-hidden="true"></i>
+	  <h4>1.5 million</h4>
+	    <p>Number of students impacted by AVID’s proven, real-world strategies annually</p>
   </figure>
 
-  <figure class="item">
-    <h1>2</h1>
+  <figure class="item" id="second-item">
+    <i class="fa fa-5x fa-graduation-cap" aria-hidden="true"></i>
+	  <h4>98%</h4> 
+	    <p>Percentage of AVID students who graduate from high school</p>
   </figure>
 
-  <figure class="item">
-    <h1>3</h1>
+  <figure class="item" id="third-item">
+  <i class="fa fa-5x fa-check-square" aria-hidden="true"></i>
+    <h4>93%</h4>
+	   <p>Percentage of AVID students who complete four-year college entrance requirements</p>
   </figure>
   
-   <figure class="item">
-    <h1>4</h1>
+   <figure class="item" id="fourth-item">
+   <i class="fa fa-5x fa-bank" aria-hidden="true"></i>
+    <h4>88%</h4>
+	  <p>Percentage of AVID students who persist into their second year of college</p>
   </figure>
 
   <div class="controls">

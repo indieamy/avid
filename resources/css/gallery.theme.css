@@ -14,7 +14,7 @@
 .gallery {
   display: flex;
   position: relative;
-  height: 35rem;
+  height: 20rem;
 }
 .gallery .item { 
   align-items: center;
@@ -26,7 +26,7 @@
 }
 .gallery .controls {
   position: absolute;
-  bottom: 0;
+ bottom: 0;
   width: 100%;
   text-align: center;
 }
