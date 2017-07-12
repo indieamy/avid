@@ -15,17 +15,17 @@
   display: flex;
   position: relative;
   height: 25rem;
-  padding-bottom: 1%;
+  /*padding-bottom: 1%;*/
+	background-image: url("../images/gradcaps.jpg");
 }
 
 .gallery #first-item {
-	padding-bottom: 1%;
+	/*padding-bottom: 1%;*/
 }
 
 .gallery .item { 
   align-items: center;
-  padding: 4rem 0 0rem 0;
-  height: 10rem;
+  padding: 0rem 0 0rem 0;
   overflow: hidden;
   text-align: center;
   background: #4d87e2;

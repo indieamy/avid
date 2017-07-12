@@ -9,6 +9,29 @@
 <link rel="stylesheet" href="resources/css/gallery.min.css">
 <script src="https://use.fontawesome.com/4ff4d94746.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,700,800,800i|Open+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#speed" ).selectmenu();
+ 
+    $( "#files" ).selectmenu();
+ 
+    $( "#number" )
+      .selectmenu()
+      .selectmenu( "menuWidget" )
+        .addClass( "overflow" );
+ 
+    $( "#salutation" ).selectmenu();
+  } );
+	  
+	  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
 </head>
 
 
@@ -107,48 +130,122 @@
     <a href="#item-4" class="control-button">•</a>
   </div>
 </div>	
-	<div class="clearfix"></div>
  
- <div class="container-tabs">
-<div class="content">
-	<div class="title"><h3>Events and Trainings</h3></div>
-<ul class="tabs">
-        <li>
-          <input type="radio" checked name="tabs" id="tab1">
-          <label for="tab1">Summer Institute</label>
-          <div id="tab-content1" class="tab-content animated fadeIn">
-          <div class="content-box">
+ 
+<!-- Test jQuery Tabbed Apps -->
+
+<div class="container-tabs">
+<div class="title">
+	<h3>Events and Trainings</h3>
+	</div>
+<div class="container-content">
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Summer Institute</a></li>
+    <li><a href="#tabs-2">National Conference</a></li>
+    <li><a href="#tabs-3">Webinars</a></li>
+  </ul>
+  <div id="tabs-1">
+   <div class="content-box" id="content-box1">
 			  <h4>Prepare for the School Year</h4>
 			  <p>With over 40 strands offered in 7 states across the country, there is something for everyone.</p>
 			  <span>Learn More</span>
 			  </div>
-          </div>
-        </li>
-        <li>
-          <input type="radio" name="tabs" id="tab2">
-          <label for="tab2">National Conference</label>
-          <div id="tab-content2" class="tab-content animated fadeIn">
-            <img src="resources/images/Natcon.jpg">
-          </div>
-        </li>
-        <li>
-          <input type="radio" name="tabs" id="tab3">
-          <label for="tab3">Webinars</label>
-          <div id="tab-content3" class="tab-content animated fadeIn">
-            <img src="resources/images/Webinar.jpg">
-          </div>
-        </li>
-</ul>
+    <p></p>
+  </div>
+  <div id="tabs-2">
+    <div class="content-box" id="content-box2">
+			  <h4>See AVID In Action</h4>
+			  <p>National Conference gives educators the opportunity to learn more about our programs.</p>
+			  <span>Learn More</span>
+			  </div>
+  </div>
+  <div id="tabs-3">
+    <div class="content-box" id="content-box3">
+			  <h4>Visit an AVID Classroom</h4>
+			  <p>With virtual webinars, interested partners have a bird's eye view into the work we do.</p>
+			  <span>Learn More</span>
+			  </div>
+  </div>
+</div> 
 	</div>
 	</div>
  
+ 
+ <!-- jQuery form fields -->
 
  
+ <div class="demo">
+ 
+<form action="#">
+ 
+  <fieldset>
+    <label for="speed">Select a speed</label>
+    <select name="speed" id="speed">
+      <option>Slower</option>
+      <option>Slow</option>
+      <option selected="selected">Medium</option>
+      <option>Fast</option>
+      <option>Faster</option>
+    </select>
+ 
+    <label for="files">Select a file</label>
+    <select name="files" id="files">
+      <optgroup label="Scripts">
+        <option value="jquery">jQuery.js</option>
+        <option value="jqueryui">ui.jQuery.js</option>
+      </optgroup>
+      <optgroup label="Other files">
+        <option value="somefile">Some unknown file</option>
+        <option value="someotherfile">Some other file with a very long option text</option>
+      </optgroup>
+    </select>
+ 
+    <label for="number">Select a number</label>
+    <select name="number" id="number">
+      <option>1</option>
+      <option selected="selected">2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+      <option>13</option>
+      <option>14</option>
+      <option>15</option>
+      <option>16</option>
+      <option>17</option>
+      <option>18</option>
+      <option>19</option>
+    </select>
+ 
+    <label for="salutation">Select a title</label>
+    <select name="salutation" id="salutation">
+      <option disabled selected>Please pick one</option>
+      <option>Mr.</option>
+      <option>Mrs.</option>
+      <option>Dr.</option>
+      <option>Prof.</option>
+      <option>Other</option>
+    </select>
+  </fieldset>
+ 
+</form>
+ 
+</div>
  
  
  
  
  
-	<script src="resources/js/main.js"></script>
+ 
+ 
+ 
+ 
 </body>
 </html>
