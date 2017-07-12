@@ -253,11 +253,6 @@ fieldset {
 	width: 100%;
 }
 
-#tabs {
-	align-items: center;
-	max-width: 100%;
-}
-
 .title {
 	text-align: center;
 	flex-grow: 1;
@@ -271,11 +266,67 @@ fieldset {
 	font-weight: 500;
 }
 
+
+#tabs {
+	align-items: center;
+	max-width: 100%;
+}
+
+#tabs {
+	border: none;
+	padding: 0 0;
+}
+
+#tabs ul:active {
+	border: none;
+}
+
+#tabs ul {
+	background-color: #184b6c;
+	border: none;
+}
+
+#tabs ul li {
+	font-family: 'Montserrat'; 
+	font-weight: 500;
+}
+
+#tabs ul li a {
+	color: #2980b9;
+	background-color: #ecf0f1;
+}
+
+#tabs ul li a:active {
+	background-color: #2980b9;
+	border: 0pc solid #dddddd;
+}
+
+#tabs ul li a:hover {
+	background-color: #f1c40f;
+}
+
+#tabs-1 {
+	background-image: url(../images/SI.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#tabs-2 {
+	background-image: url(../images/Orlando_small.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#tabs-3 {
+	background-image: url(../images/Webinar.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 /*Content within tab image */
 
 .content-box {
 	/*position: absolute;*/
-	max-width: 50%;
+	max-width: 60%;
 	height: 20rem;
 	background-color: rgba(22, 160, 133, 0.7);
 	margin: 5rem;
@@ -291,6 +342,7 @@ fieldset {
 
 .content-box p {
 	color: white;
+	font-family: 'Open Sans';
 	font-size: 1.5rem;
 	line-height: 3rem;
 	padding: 0rem 2rem;
@@ -298,6 +350,8 @@ fieldset {
 
 
 .content-box span {
+	font-family: 'Open Sans';
+	font-weight: 600;
 	font-size: 1rem;
 	text-transform: uppercase;
 	padding: 1rem 2rem;
@@ -334,7 +388,7 @@ fieldset {
 	background-color: rgba(41,128, 185, 0.7);
 }
 
-#content-box2 span:hover {
+#content-box3 span:hover {
 	color: #f1c40f;
 	background-color: rgba(41,128, 185, 0.7);
 	border: 2px solid #f1c40f;
@@ -343,7 +397,7 @@ fieldset {
 }
 
 .ui-tabs {
-	width: 75%;
+	width: 60%;
 	border: none;
 }
 
@@ -351,54 +405,44 @@ fieldset {
     border: 1px solid #ecf0f1;
 }
 
-/*.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: 1px solid #2980b9;
-    background: #2980b9;
-    font-weight: normal;
-    color: #ffffff;
-}*/
+/* Form Fields */
 
-#tabs {
-	border: none;
-	padding: 0 0;
+.demo {
+	background-color: rgb(155, 89, 182);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 600px;
 }
 
-#tabs ul:active {
-	border: none;
+.container-content-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5rem;
+	width: 30%;
+	background-color: #5c356c;
+	padding: 2rem 5rem;
+	border-radius: 0.5rem;
 }
 
-#tabs ul {
-	background-color: #184b6c;
-	border: none;
+.title-form {
+	font-size: 3rem;
+	color: #ecf0f1;;
+	line-height: 4rem;
+	margin: 0rem 0 0rem 3rem;
 }
 
-#tabs ul li a {
-	color: #2980b9;
-	background-color: #ecf0f1;
+form {
+	color: #ecf0f1;
+	display: inline-block;
 }
 
-#tabs ul li a:active {
-	background-color: #2980b9;
-	border: 0pc solid #dddddd;
+fieldset {
+	display: inline-block;
 }
 
-#tabs ul li a:hover {
-	background-color: #f1c40f;
-}
-
-#tabs-1 {
-	background-image: url(../images/SI.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#tabs-2 {
-	background-image: url(../images/Natcon.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#tabs-3 {
-	background-image: url(../images/Webinar.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+form label {
+	font-size: 2rem;
+	padding-bottom: 1rem;
 }
