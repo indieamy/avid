@@ -408,14 +408,14 @@ fieldset {
 /* Form Fields */
 
 .demo {
-	background-color: rgb(155, 89, 182);
+	background-color: #ecf0f1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 600px;
 }
 
-.container-content-form {
+/*.container-content-form {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -424,25 +424,88 @@ fieldset {
 	background-color: #5c356c;
 	padding: 2rem 5rem;
 	border-radius: 0.5rem;
-}
+}*/
 
 .title-form {
 	font-size: 3rem;
-	color: #ecf0f1;;
+	color: #2980b9;
 	line-height: 4rem;
-	margin: 0rem 0 0rem 3rem;
 }
 
 form {
-	color: #ecf0f1;
+	color: #2980b9;
 	display: inline-block;
 }
 
 fieldset {
-	display: inline-block;
+	display: inline;
 }
 
 form label {
 	font-size: 2rem;
 	padding-bottom: 1rem;
+}
+
+.ui-selectmenu-text {
+    text-align: left;
+    white-space: nowrap;
+    font-family: 'Open Sans';
+	color: #184B6C;
+}
+
+.ui-selectmenu-open #number {
+	height: 100%;
+}
+
+.button-profile {
+	padding-bottom: 8rem;
+}
+
+.button-profile a {
+	position: absolute;
+	font-size: 1rem;
+	font-weight: 550;
+	text-transform: uppercase;
+	margin-top: 4rem;
+	padding: 1rem 2rem;
+	background-color: #2980b9;
+	color: #ecf0f1;
+	border: 2px solid #2980b9;
+	border-radius: 0.3rem;
+	transition: background-color 0.5s ease-out; 
+}
+
+.button-profile a:hover {
+	color: #2980b9;
+	background-color: #ecf0f1;
+	border: 2px solid #2980b9;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in;
+}
+
+
+/* Test Flexbox Stories */
+
+.cards {
+  background-color: #f1c40f;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: stretch;
+}
+
+#expertise {
+  padding: 3.33rem;
+	font-size: 3rem;
+	color: #2980b9;
+	line-height: 4rem;
+  background-color: #f1c40f;
+  margin: 0;
+  text-align: center;
 }
