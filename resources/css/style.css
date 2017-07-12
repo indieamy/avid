@@ -458,7 +458,7 @@ form label {
 }
 
 .button-profile {
-	padding-bottom: 9rem;
+	padding-bottom: 13rem;
 }
 
 .button-profile a {
@@ -503,7 +503,7 @@ form label {
 #expertise {
   padding: 3.33rem;
 	font-size: 3rem;
-	color: 184B6C;
+	color: #184B6C;
 	line-height: 4rem;
   background-color: #f1c40f;
   margin: 0;
