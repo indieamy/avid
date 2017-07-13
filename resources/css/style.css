@@ -63,7 +63,8 @@ nav > ul > li > a {
   	border-bottom: 3px solid transparent;
 }
 nav > ul > li:hover > a {
-	color: #f1c40f; 
+	color: #f1c40f;
+	transition: color 0.5s ease-out;
 }
 
 #logo {
@@ -142,8 +143,8 @@ nav > ul > li:hover > a {
 
 #myavid-login {
 	color: #f1c40f;
-	border: 2px solid #f1c40f;
-	padding: 0.7rem;
+	border: 2.5px solid #f1c40f;
+	padding: 1rem;
 	border-radius: 0.3rem;
 	transition: color 0.5s ease-out,
 		border 0.5s ease-out;
@@ -151,7 +152,7 @@ nav > ul > li:hover > a {
 }
 
 #myavid-login:hover {
-	border: 2px solid #ecf0f1;
+	border: 2.5px solid #ecf0f1;
 	color: #ecf0f1;
 }
 
