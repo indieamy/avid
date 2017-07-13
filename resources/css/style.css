@@ -143,7 +143,7 @@ nav > ul > li:hover > a {
 #myavid-login {
 	color: #f1c40f;
 	border: 2px solid #f1c40f;
-	padding: 0.5rem;
+	padding: 0.7rem;
 	border-radius: 0.3rem;
 	transition: color 0.5s ease-out,
 		border 0.5s ease-out;
