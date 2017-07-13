@@ -290,7 +290,7 @@ nav > ul > li:hover > a {
 }
 
 .content h2 {
-	color: #16a085;
+	color: rgb(231, 76, 60);
 	align-items: center;
 	text-align: center;
 	font-size: 3rem;
@@ -412,7 +412,7 @@ fieldset {
 
 .title h3 {
 	font-size: 2.5rem;
-	color: #2980b9;
+	color: rgb(231, 76, 60);
 	font-weight: 500;
 }
 
@@ -476,7 +476,7 @@ fieldset {
 
 .content-box {
 	/*position: absolute;*/
-	max-width: 60%;
+	max-width: 100%;
 	height: 20rem;
 	background-color: rgba(22, 160, 133, 0.7);
 	margin: 5rem;
@@ -577,8 +577,9 @@ fieldset {
 }*/
 
 .title-form {
-	font-size: 3rem;
-	color: #2980b9;
+	font-size: 2.5rem;
+	color: rgb(231, 76, 60);
+	font-weight: 500;
 	line-height: 4rem;
 }
 
