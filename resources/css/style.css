@@ -486,18 +486,25 @@ form label {
 
 /* Test Flexbox Stories */
 
+
 .cards {
-  background-color: #f1c40f;
+  background-color: #ffc200;
   display: flex;
   justify-content: center;
+	align-items: stretch;
   flex-wrap: wrap;
+	padding: 0 20rem;
 }
 
 .col {
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
-	align-items: stretch;
+  justify-content: space-around;
+	padding-bottom: 6rem;
+}
+
+.col img {
+	padding: 1rem 1rem;
 }
 
 #expertise {
@@ -508,4 +515,8 @@ form label {
   background-color: #f1c40f;
   margin: 0;
   text-align: center;
+}
+
+footer img {
+	max-width: 100%;
 }
