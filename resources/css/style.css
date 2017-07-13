@@ -465,13 +465,13 @@ fieldset {
 }
 
 #tabs-1 {
-	background-image: url(../images/SI.jpg);
+	background-image: url(../images/Natcon.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #tabs-2 {
-	background-image: url(../images/Natcon.jpg);
+	background-image: url(../images/SI.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -701,9 +701,9 @@ form label {
 
 
 footer h3 {
-	padding: 3.33rem;
+	padding: 3.33rem 0 0.5rem 0;
 	font-size: 3rem;
-	color: #2980b9;
+	color: rgb(231, 76, 60);
 	line-height: 4rem;
   background-color: #fff;
   margin: 0;
